@@ -3,8 +3,8 @@ import { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "lyricgpt",
-  description: "A new way to find music",
+  title: "Find music using AI  ",
+  description: "Trained on the lyrics of 8k+ songs",
   openGraph: {
     type: "website",
     url: "https://lyricgpt.com",
