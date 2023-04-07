@@ -1,16 +1,15 @@
 // These styles apply to every route in the application
+import { Metadata } from "next";
 import "./globals.css";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "lyricgpt",
   description: "A new way to find music",
-  image: "https://images.lyricgpt.io/website.png",
-  opengraph: {
+  openGraph: {
     type: "website",
     url: "https://lyricgpt.com",
     title: "lyricgpt - A New Way to Find Music",
     description: "A new way to find music",
-    image: "https://images.lyricgpt.io/website.png",
     images: [
       {
         url: "https://images.lyricgpt.io/website.png",
@@ -19,15 +18,13 @@ export const metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    site: "@lyricgpt",
-    title: "lyricgpt - A New Way to Find Music",
-    description:
-      "Discover new music and explore lyrics with lyricgpt, the latest AI-powered music search engine.",
-    image: {
+    creator: "@ApolloToday",
+    description: "A new way to find music",
+    images: {
       url: "https://images.lyricgpt.io/website.png",
       alt: "lyricgpt",
     },
+    card: "summary_large_image",
   },
 };
 
