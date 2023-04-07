@@ -1,38 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# lyricGPT (pre-alpha)
 
-## Getting Started
+Using OpenAI's embeddings to search music
 
-First, run the development server:
+## Tutorial
+
+I wrote a tutorial about getting supabase set up and calling OpenAI's API. You can find it [here](tutorial.lyricgpt.io).
+
+## running the app
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+pnpm i
+pnpm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## running generateEmbeddings
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Move the `generateEmbeddings` folder to `app/api` and run the following commands:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+pnpm run dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Use curl to call endpoint
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+curl http://127.0.0.1:3001/api/generateEmbeddings
+```
 
-## Learn More
+## Contributing to lyricGPT
 
-To learn more about Next.js, take a look at the following resources:
+To contribute to our project, follow these steps:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Fork the repository
+Clone the repository to your local machine
+Make changes to the code or documentation
+Commit your changes
+Push your changes to your forked repository
+Open a pull request with a description of your changes
+We welcome your contributions!
