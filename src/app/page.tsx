@@ -1,7 +1,7 @@
 // import { QueryAndSongList } from "@/components";
 
 import { CountUpFunction, EmailForm, QueryAndSongList } from "@/components";
-import { Analytics } from "@vercel/analytics/react";
+
 export default function Page() {
   return (
     <div className="min-h-screen bg-gradient-to-r min-w-full from-blue-600/25 to-sky-600/25">
