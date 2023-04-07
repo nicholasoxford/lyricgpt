@@ -1,2 +1,3 @@
 export { supabaseClient } from "./supabase";
-export { openAi } from "./openai";
+export { openAi, getDocuments } from "./openai";
+export type { songRow } from "./types";

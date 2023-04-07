@@ -15,7 +15,7 @@ export function QueryAndSongList() {
       {isLoading ? (
         <Loading />
       ) : (
-        <div className="flex flex-col space-y-8 mt-4">
+        <div className="flex flex-col space-y-8 mt-4 mb-4">
           {songList.map((song, index) => {
             return (
               <div key={index}>
