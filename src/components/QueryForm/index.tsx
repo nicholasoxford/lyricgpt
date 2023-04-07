@@ -58,6 +58,7 @@ export function QueryForm({
         <div className=" flex w-full  flex-col items-center mb-3 mt-4 justify-center">
           <input
             type="text"
+            autoComplete="false"
             id="query"
             name="query"
             placeholder="Happy rap songs"

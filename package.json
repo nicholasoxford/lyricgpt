@@ -1,5 +1,5 @@
 {
-  "name": "lyricmatch",
+  "name": "lyricgpt",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,10 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mdx-js/react": "^2.3.0",
-    "@next/mdx": "^13.3.0",
     "@supabase/supabase-js": "^2.14.0",
-    "@theme-ui/mdx": "^0.15.7",
     "@types/node": "18.15.11",
     "@types/react": "18.0.33",
     "@types/react-dom": "18.0.11",
@@ -29,7 +26,6 @@
     "react": "18.2.0",
     "react-countup": "^6.4.2",
     "react-dom": "18.2.0",
-    "theme-ui": "^0.15.7",
     "typescript": "5.0.3"
   },
   "devDependencies": {

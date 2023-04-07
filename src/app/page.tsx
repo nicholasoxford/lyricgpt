@@ -7,7 +7,7 @@ export default function Page() {
       <div className="md:container md:mx-auto  mx-6">
         <div className="flex flex-col justify-center items-center  ">
           <span className="text-sm text-yellow-200 font-medium mt-20 md:mt-40 mb-6  ">
-            ( Alpha )
+            ( Pre-Alpha )
           </span>
           <div className=" flex ">
             <div className="rounded-xl bg-gray-400/50 p-2 flex flex-row   ">
