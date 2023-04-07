@@ -6,11 +6,16 @@ import { Loading } from "../Loading";
 
 export function QueryAndSongList() {
   const [isLoading, setIsLoading] = useState(false);
+  const [hasFeteched, setFetched] = useState<boolean>(false);
   const [songList, setSongList] = useState<`${string} - ${string}`[]>([]);
 
   return (
     <>
-      <QueryForm setSongList={setSongList} setIsLoading={setIsLoading} />
+      <QueryForm
+        setSongList={setSongList}
+        setIsLoading={setIsLoading}
+        setFetched={setFetched}
+      />
 
       {isLoading ? (
         <Loading />
@@ -23,6 +28,17 @@ export function QueryAndSongList() {
               </div>
             );
           })}
+
+          {hasFeteched && songList.length === 0 && (
+            <div className="flex flex-col items-center">
+              <div className="text-2xl font-bold text-gray-400">
+                No results found
+              </div>
+              <div className="text-lg text-gray-400">
+                We are working hard every day to improve our search results.
+              </div>
+            </div>
+          )}
         </div>
       )}
     </>

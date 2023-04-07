@@ -3,10 +3,12 @@ import { Dispatch, FormEvent, SetStateAction } from "react";
 
 export function QueryForm({
   setSongList,
+  setFetched,
   setIsLoading,
 }: {
   setSongList: Dispatch<SetStateAction<`${string} - ${string}`[]>>;
   setIsLoading: Dispatch<SetStateAction<boolean>>;
+  setFetched: Dispatch<SetStateAction<boolean>>;
 }) {
   const handleSubmit = async (
     event: FormEvent<HTMLFormElement> & {
@@ -51,6 +53,7 @@ export function QueryForm({
     const result = await response.json();
     setSongList(result.uniqueSongs);
     setIsLoading(false);
+    setFetched(true);
   };
   return (
     <>
