@@ -35,16 +35,20 @@ export async function POST(req: Request) {
       match_count: 10, // Choose the number of matches
     }
   );
-
   const songs: `${string} - ${string}`[] = documents.map(
     (x: { title: string; artist: string; content: string }) => {
       return `${x.artist} - ${x.title}`;
     }
   );
 
-  //remove duplicates
   const uniqueSongs = [...new Set(songs)];
-  console.log(uniqueSongs);
+  const { data, error: err2 } = await supabaseClient.from("call_logs").insert([
+    {
+      query_field: input,
+      songs: uniqueSongs,
+      request_header_field: JSON.stringify(req),
+    },
+  ]);
 
   return new Response(
     JSON.stringify({
