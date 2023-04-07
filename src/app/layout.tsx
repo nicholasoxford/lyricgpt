@@ -9,6 +9,7 @@ export const metadata = {
     url: "https://lyricgpt.com",
     title: "lyricgpt",
     description: "A new way to find music",
+    image: "https://images.lyricgpt.io/website.png",
     images: [
       {
         url: "https://images.lyricgpt.io/website.png",
