@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Trained on the lyrics of 8k+ songs",
   openGraph: {
     type: "website",
-    url: "https://lyricgpt.com",
+    url: "https://lyricgpt.io",
     title: "lyricgpt - A New Way to Find Music",
     description: "A new way to find music",
     images: [
