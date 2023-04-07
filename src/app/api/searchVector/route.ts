@@ -38,7 +38,7 @@ export async function POST(req: Request) {
 
   const songs: `${string} - ${string}`[] = documents.map(
     (x: { title: string; artist: string; content: string }) => {
-      return `${x.title} - ${x.artist}`;
+      return `${x.artist} - ${x.title}`;
     }
   );
 
