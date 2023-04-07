@@ -2,8 +2,9 @@
 const nextConfig = {
   experimental: {
     appDir: true,
-    swcMinify: false,
+    mdxRs: true,
   },
 };
 
-module.exports = nextConfig;
+const withMDX = require("@next/mdx")();
+module.exports = withMDX(nextConfig);

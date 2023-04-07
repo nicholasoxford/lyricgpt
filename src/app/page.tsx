@@ -1,7 +1,6 @@
 // import { QueryAndSongList } from "@/components";
 
-import { QueryAndSongList } from "@/components";
-import { CountUpFunction } from "@/components/CountUp";
+import { CountUpFunction, QueryAndSongList } from "@/components";
 export default function Page() {
   return (
     <div className="min-h-screen bg-gradient-to-r min-w-full from-blue-600/25 to-sky-600/25">
