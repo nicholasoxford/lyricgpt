@@ -4,6 +4,7 @@ import "./globals.css";
 export const metadata = {
   title: "lyricgpt",
   description: "A new way to find music",
+  image: "https://images.lyricgpt.io/website.png",
   opengraph: {
     type: "website",
     url: "https://lyricgpt.com",
