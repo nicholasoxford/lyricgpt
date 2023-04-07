@@ -1,9 +1,12 @@
 // import { QueryAndSongList } from "@/components";
 
-import { CountUpFunction, QueryAndSongList } from "@/components";
+import { CountUpFunction, EmailForm, QueryAndSongList } from "@/components";
 export default function Page() {
   return (
     <div className="min-h-screen bg-gradient-to-r min-w-full from-blue-600/25 to-sky-600/25">
+      <div className="fixed top-5 w-full flex justify-center items-center z-10">
+        <EmailForm />
+      </div>
       <div className="md:container md:mx-auto  mx-6">
         <div className="flex flex-col justify-center items-center  ">
           <span className="text-sm text-yellow-200 font-medium mt-20 md:mt-40 mb-6  ">
