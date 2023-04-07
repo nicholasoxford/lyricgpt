@@ -1,7 +1,7 @@
 // These styles apply to every route in the application
 import { Metadata } from "next";
 import "./globals.css";
-
+import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   title: "Find music using AI  ",
   description: "Trained on the lyrics of 8k+ songs",
@@ -35,6 +35,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Analytics />
       <body>{children}</body>
     </html>
   );
